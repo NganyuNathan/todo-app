@@ -74,12 +74,12 @@
     
    
 }
-.new{
+/* .new{
     /* width: fit-content; */
     /* padding: 2px; */
     /* margin-right: 2rem; */
    
-}
+ */
 .todoliss{
     display: flex;
     flex-wrap: wrap;
