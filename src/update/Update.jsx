@@ -91,8 +91,8 @@ if(data){
 <label for="quantity">Priority :</label> 
 <input type="text" className="inputs"value={Quality} id="quantity" name="quantity" required placeholder="High, low or Average" onChange={(e)=> setQuality(e.target.value)} /><br/>
 
-<label for="rating">Rating :</label> 
-<input type="number" className="inputs"value={Rating} id="price" name="price" onChange={(e)=> setRating(e.target.value)} placeholder="1-10" required/>
+<label for="rating">Date :</label> 
+<input type="date" className="inputs"value={Rating} id="price" name="price" onChange={(e)=> setRating(e.target.value)} placeholder="1-10" required/>
 
 <label htmlFor="description">Description :</label> <br/>
 <textarea name="description" id="description" className="inputs"value={Method} cols="30" rows="10" placeholder="etc lorem ipsum rshfklsd asdgf " onChange={(e)=> setMethod(e.target.value)} required></textarea>

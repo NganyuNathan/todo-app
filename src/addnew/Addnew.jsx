@@ -2,8 +2,9 @@ import './Addnew.css';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import supabase from "../supabaseClient"
-import{ useNavigate } from "react-router-dom"
+// import{ useNavigate } from "react-router-dom"
 import { useContext } from "react";
+import { useParams, useNavigate } from "react-router-dom"
 
 
 
@@ -100,9 +101,9 @@ const{ data, error} = await supabase
     setFormError("please fill in the fields")
   }
   if(data){
-    console.log(data)
     setFormError(null)
-    navigate('/')
+    console.log(data)
+    navigate('/home')
   }
 
 
@@ -130,14 +131,14 @@ const{ data, error} = await supabase
       <label for="quantity">Priority :</label> 
       <input type="text" className="inputs" id="quantity" name="quantity" required placeholder="High, low or Average" onChange={(e)=> setQuality(e.target.value)} /><br/>
 
-      <label for="rating">Rating :</label> 
-      <input type="number" className="inputs" id="price" name="price" onChange={(e)=> setRating(e.target.value)} placeholder="1-10" required/>
+      <label for="rating">Date :</label> 
+      <input type="date" className="inputs" id="price" name="price" onChange={(e)=> setRating(e.target.value)} placeholder="1-10" required/>
 
     <label htmlFor="description">Description :</label> <br/>
     <textarea name="description" id="description" className="inputs" cols="30" rows="10" placeholder="etc lorem ipsum rshfklsd asdgf " onChange={(e)=> setMethod(e.target.value)} required></textarea>
 
       <div className="butt">
-      <input className="date" type="time"  onChange={(e)=> {setDate(e.target.value); setAlarmTriggered(false);}} required  />
+      <input className="date" type="time"  onChange={(e)=> {setDate(e.target.value); setAlarmTriggered(false);}} required />
     <button onClick={isloading} className="bts">{load}</button>
       </div>
 

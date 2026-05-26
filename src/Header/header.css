@@ -10,7 +10,7 @@
 }
 .link{
     color: black;
-    background-color:greenyellow;
+    background-color:rgb(154, 221, 53);
      border: none;
      border-radius: 15ch;
      padding: 10px;
@@ -35,6 +35,9 @@
     font-size: 25px;
     cursor: pointer;
 }
+.linke button:hover{
+    background-color: rgb(109, 29, 29);
+}
 .head h1{
     /* font-family: cursive; */
     font-weight: bolder;
@@ -48,6 +51,10 @@
     margin-top: 10rem;
     font-size: 25px;
     color: red;
+    /* background-color: rgb(201, 200, 200);
+    padding: 4px;
+    border-radius: 15ch;
+    width: fit-content; */
     
 }
 .links{
@@ -69,6 +76,7 @@
     /* margin-top: 15rem; */
     /* position: absolute; */
     background-color:rgb(221, 221, 221);
+    /* background-color: aqua; */
     /* padding:0px; */
     /* height:5.9rem; */
     
@@ -79,7 +87,7 @@
     /* padding: 2px; */
     /* margin-right: 2rem; */
    
- */
+
 .todoliss{
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +95,7 @@
     margin-top: 35px;
     margin-left: 3.8rem;
 }
-.todoo{
+.todo{
     /* background-color: green; */
     /* position: relative; */
     /* margin-top: 10rem; */
@@ -114,8 +122,8 @@
      display: flex;
      justify-content: center;
      margin-top: 8rem;
-     animation-name: drop 1.5s ease;
-     animation-fill-mode: forwards;
+     /* animation-name: drop 1.5s ease;
+     animation-fill-mode: forwards; */
  }
  .loadingc h1{
      /* width: 600px;
@@ -143,7 +151,7 @@
         display: flex;
         /* justify-content: center; */
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 3rem;
         margin-top: 35px;
         /* margin-right: 5rem; */
 
@@ -166,7 +174,7 @@
 }
 @media(min-width: 1105px){
     .todoo{
-        height: 36rem;
+        height: 33rem;
     }
     
 

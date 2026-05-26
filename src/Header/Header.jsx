@@ -1,10 +1,9 @@
-import './header.css';
-import  {Link, useNavigate}  from "react-router-dom";
-import Body from '../body/Body';
-// import { useState } from 'react';
-import supabase from "../supabaseClient"
-import  { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Cards from '../cards/Cards';
+// import { useState } from 'react';
+import supabase from "../supabaseClient";
+import './header.css';
 // import { useContext } from "react";
 
 
@@ -18,8 +17,6 @@ function Header({token}){
 
     setInterval(updatetime, 1000);
 
-  
-
   function updatetime(){
       const newtime = new Date().toLocaleTimeString();
       setTime(newtime)
@@ -29,6 +26,8 @@ function Header({token}){
   const[todo, setTodo] = useState(null)
   const[orderby, setOrderby] = useState("created_at")
   const [loading, setLoading] = useState(true);
+
+  const [notification, setNotification] = useState("")
 
 
 
@@ -58,7 +57,11 @@ function Header({token}){
            setLoading(false);
        }
        fetchTodo()
+
   },[orderby])
+
+
+
 
   function handlelogout(){
     sessionStorage.removeItem("token")
@@ -70,7 +73,9 @@ function Header({token}){
 
     return(
         <div>
-        <div className="head">
+         <div className="head">
+
+            
     <h1> Hi! {token.session?.user?.user_metadata?.firstname}🙌</h1>
             <div className="side">
           
@@ -86,24 +91,28 @@ function Header({token}){
 
       
         </div>
+   
       <div className="all">
       <div className="order-by">
                 <p>Order-by:</p>
                 <button onClick={() => setOrderby("Title")}>Title</button>
-                <button onClick={() => setOrderby("Rating")}>Rating</button>
+                <button onClick={() => setOrderby("Rating")}>Date</button>
                 <button onClick={() => setOrderby("created_at")}>Time created</button> 
             
               </div>
+
+
+                   
         {error &&(<p className="err">{error}</p>)}
 
 
-        <div className="todo">
+        <div className="todo">     
 
   {loading ? (
 
     <div className="loadingc">
       {/* <img src="task.png" alt="loading..." /> */}
-      <h1>Loading....</h1>
+      <h1>Loading Task...</h1>
     </div>
 
   ) : (
