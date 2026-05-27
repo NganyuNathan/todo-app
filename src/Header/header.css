@@ -173,17 +173,20 @@
 
 }
 @media(min-width: 1105px){
-    .todoo{
+    /* .todoo{
         height: 33rem;
     }
-    
+     */
 
 }
 @media(max-width: 740px){
+    .Addnew{
+        /* height:20px; */
+    }
 
-    /* .todoo{
-        height: 37rem;
-    } */
+    .todo{
+        height: 38rem;
+    }
     .link{
         right: 1rem;
         bottom: 4rem;
