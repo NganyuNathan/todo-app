@@ -15,7 +15,7 @@ function Signin(){
 async function handlesubmit(e){
     e.preventDefault()
  try {
-    const{data, error} = await supabase.auth.signUp(
+    const{} = await supabase.auth.signUp(
         {
             email: Rating,
             password: Quality, 

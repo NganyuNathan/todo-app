@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import supabase from "../supabaseClient"
 // import{ useNavigate } from "react-router-dom"
-import { useContext } from "react";
-import { useParams, useNavigate } from "react-router-dom"
+// import { useContext } from "react";
+import {useNavigate} from "react-router-dom"
 
 
 
@@ -18,7 +18,7 @@ const[Method, setMethod] = useState("")
 const[Rating, setRating] = useState("")
 const[Quality, setQuality] = useState("")
 const[time, setDate] = useState("")
-const[formError, setFormError] = useState("")
+const[, setFormError] = useState("")
 const[load, setLoad] = useState("ADD TASK")
 const [alarmTriggered, setAlarmTriggered] = useState(false);
 

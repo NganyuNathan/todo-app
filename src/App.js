@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header/Header.jsx'; 
-import Body from './body/Body';
+// import Body from './body/Body';
 import Addnew from './addnew/Addnew.jsx';
 import {BrowserRouter, Routes, Route}  from "react-router-dom";
 import Update from './update/Update';

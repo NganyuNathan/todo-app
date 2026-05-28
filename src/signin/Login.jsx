@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Signin.css';
 import supabase from '../supabaseClient';
 import { Link } from 'react-router-dom';
-import { useParams, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import Button from '../button/Button';
 // import Alarm from '../context/AlarmContext';
 

@@ -1,11 +1,11 @@
 import './Card.css';
 import { Link } from 'react-router-dom';
 import supabase from "../supabaseClient"
-import { useState, useEffect } from 'react';
+// import { useState} from 'react';
 
 
 function Cards ({todo, ondelete}){
-    const [alarmTriggered, setAlarmTriggered] = useState(false);
+    // const [alarmTriggered, setAlarmTriggered] = useState(false);
 
 
 const handledelete = async () =>{
