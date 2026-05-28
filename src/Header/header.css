@@ -180,9 +180,9 @@
 
 }
 @media(max-width: 740px){
-    .Addnew{
-        /* height:20px; */
-    }
+    /* .Addnew{
+        height:20px;
+    } */
 
     .todo{
         height: 38rem;
