@@ -15,7 +15,7 @@ function Signin(){
 async function handlesubmit(e){
     e.preventDefault()
  try {
-    const{} = await supabase.auth.signUp(
+    const { error } = await supabase.auth.signUp(
         {
             email: Rating,
             password: Quality, 
@@ -26,6 +26,9 @@ async function handlesubmit(e){
             }
         }
     )
+    if (error) {
+      throw error;
+    }
     alert("check your email for verification link")
      
  } catch (error) {

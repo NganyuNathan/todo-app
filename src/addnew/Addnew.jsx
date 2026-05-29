@@ -18,7 +18,7 @@ const[Method, setMethod] = useState("")
 const[Rating, setRating] = useState("")
 const[Quality, setQuality] = useState("")
 const[time, setDate] = useState("")
-const[, setFormError] = useState("")
+const [formError, setFormError] = useState("")
 const[load, setLoad] = useState("ADD TASK")
 const [alarmTriggered, setAlarmTriggered] = useState(false);
 
@@ -123,8 +123,9 @@ const{ data, error} = await supabase
     <form onSubmit={handleSubmit} className="forms">
 
         <div className="middle" > <h1>Todo list</h1></div>
-        
-       <label for="name">Title :</label> 
+        {formError && <p className="error">{formError}</p>}
+       
+       <label htmlFor="name">Title :</label> 
       <input type="text" className="inputs" id="name" name="name" placeholder="e.g Johnn" onChange={(e)=> setTitle(e.target.value)}  required/> 
      
 
