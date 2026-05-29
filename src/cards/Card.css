@@ -56,7 +56,6 @@
 .edits{
     display: flex;
     gap: 4px;
-    /* margin-top: 16px; */
 }
 .up{
     text-decoration: none;

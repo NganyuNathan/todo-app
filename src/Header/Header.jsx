@@ -65,6 +65,7 @@ function Header({token}){
 
   function handlelogout(){
     sessionStorage.removeItem("token")
+    alert("are you sure you want to logout?")
     navigate("/")
 
 

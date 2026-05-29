@@ -5,18 +5,15 @@
     justify-content: space-between;
     padding: 20px;
     overflow: hidden;
-    /* height: 5rem; */
-    /* position:relative; */
-    /* width: 90%; */
-    /* margin: 0px; */
+  
     
 }
 .forms{
-    /* background-color: rgb(221, 221, 221); */
+    
     padding: 5px;
     width: fit-content;
     border-radius: 9px;
-    /* margin-top: 10rem; */
+    
 
 }
 .inputs{
@@ -36,9 +33,7 @@
     margin-top: 15px;
     
 }
-/* .middle{
-    color: teal;
-} */
+
 .middle h1{
     color: teal;
 }
@@ -58,7 +53,7 @@
     border: none;
     border-radius: 9px;
     cursor: pointer;
-    /* width: 100%; */
+   
     
 }
 .bts:hover{
@@ -68,7 +63,7 @@
     list-style: none;
     font-size: 25px;
     text-decoration: none;
-    /* all: unset; */
+    
 }
 .xx{
    text-decoration: none;
