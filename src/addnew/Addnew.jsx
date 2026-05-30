@@ -94,6 +94,7 @@ const{ data, error} = await supabase
     Rating, 
     Quality,
     time
+    
   }])
 
   if(error){

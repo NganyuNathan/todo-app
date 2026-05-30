@@ -3,8 +3,6 @@
     display:flex;
     justify-content: space-between;
     padding: 3px;
-    /* position: fixed; */
-    /* margin-bottom: 1rem; */
     padding-left: 15px;
     padding-right: 15px
 }
@@ -39,7 +37,6 @@
     background-color: rgb(109, 29, 29);
 }
 .head h1{
-    /* font-family: cursive; */
     font-weight: bolder;
 }
 .side{
@@ -51,54 +48,37 @@
     margin-top: 10rem;
     font-size: 25px;
     color: red;
-    /* background-color: rgb(201, 200, 200);
-    padding: 4px;
-    border-radius: 15ch;
-    width: fit-content; */
+    
     
 }
 .links{
     text-decoration: none;
     color: rgb(92, 89, 89);
-    /* border: 2px solid rgb(80, 34, 17); */
     background-color:aqua;
     border-radius: 10ch;
      padding: 15px;
     position: relative;
-    /* font-size: 30px; */
-    /* left: 10rem; */
-     
+    
 
 }
 .Addnew{
     display: flex;
     justify-content: end;
-    /* margin-top: 15rem; */
-    /* position: absolute; */
     background-color:rgb(221, 221, 221);
-    /* background-color: aqua; */
-    /* padding:0px; */
-    /* height:5.9rem; */
-    
+   
    
 }
-/* .new{
-    /* width: fit-content; */
-    /* padding: 2px; */
-    /* margin-right: 2rem; */
-   
+
 
 .todoliss{
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3.3rem;
     margin-top: 35px;
     margin-left: 3.8rem;
 }
 .todo{
-    /* background-color: green; */
-    /* position: relative; */
-    /* margin-top: 10rem; */
+   
     overflow-y: auto;
     height:35rem ;
 }
@@ -122,8 +102,7 @@
      display: flex;
      justify-content: center;
      margin-top: 8rem;
-     /* animation-name: drop 1.5s ease;
-     animation-fill-mode: forwards; */
+   
  }
  .loadingc h1{
      /* width: 600px;
@@ -133,56 +112,35 @@
    
  }
 
-/* .alarm-popup{
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: teal;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 18px;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }  */
 @media(max-width: 1105px){
 
     .todoliss{
         display: flex;
-        /* justify-content: center; */
         flex-wrap: wrap;
         gap: 3rem;
         margin-top: 35px;
-        /* margin-right: 5rem; */
+        margin-left: 3.3rem;
+        
 
         
     }
-    /* .todoliss {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-      } */
+   
       .todoo{
           height: 45rem;
       }
       .links{
-          /* border-radius: 9px; */
+         
           display: none;
       }
 
 
 }
 @media(min-width: 1105px){
-    /* .todoo{
-        height: 33rem;
-    }
-     */
+ 
 
 }
 @media(max-width: 740px){
-    /* .Addnew{
-        height:20px;
-    } */
+ 
 
     .todo{
         height: 38rem;
@@ -192,8 +150,14 @@
         bottom: 4rem;
    
    }
+    .todoliss{
+    justify-content: center;
+    margin-right: 3.8rem;
+}
+ 
 
 }
+
 @keyframes drop{
     0%{opacity:0;}
     70%{transform: translateY(710px)}
