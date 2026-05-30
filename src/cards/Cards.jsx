@@ -35,8 +35,8 @@ return(
    <div className="delete">
    <p className="todo-date">{todo.time}</p>
     <div className="edits">
-        <p className="up" onClick={handledelete} to={"/"}>🗑️</p>
-        <Link className="ups" to={"/" + todo.id}>🖊️</Link>
+        <p className="up" onClick={handledelete} to={"/"}>🗑️ Delete</p>
+        <Link className="ups" to={"/" + todo.id}>🖊️ Edit</Link>
     </div>
 
    </div>

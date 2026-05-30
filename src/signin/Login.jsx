@@ -84,10 +84,11 @@ async function handlesubmit(e){
 
 
         </div>
-{/* <Alarm/> */}
+
         </div>
 
     )
+    
 }
 export default Login
 

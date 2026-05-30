@@ -76,7 +76,9 @@ Already have an account ? <Link className="signups" to="/Login"> Login</Link>
 
         </div>
 
-  </div>          
+  </div> 
+  
+  
 
     )
 }
