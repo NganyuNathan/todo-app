@@ -62,4 +62,11 @@
 
 }
 
+@media(max-width: 740px){
+    .heads img {
+        height: 4rem;
+        
+    }
+}
+
 
