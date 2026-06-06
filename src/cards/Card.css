@@ -93,7 +93,7 @@
           
         .edits{
     display: flex;
-    gap: 15px;
+    gap: 4px;
 }
 .hh3 {
     overflow-y: auto;
